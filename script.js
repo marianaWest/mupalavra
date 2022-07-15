@@ -1,4 +1,19 @@
-import { WORDS } from "../words.js"
+// import { WORDS } from "../words.js"
+
+const WORDS = [
+    'kozak',
+    'lange',
+    'moure',
+    'maack',
+    'peret',
+    'borba',
+    'wanda',
+    'hanke',
+    'bororo',
+    'xeta', 
+    'parana', 
+    'mate', 
+  ]
 
 const NUMBER_OF_GUESSES = 6
 let guessesRemaining = NUMBER_OF_GUESSES
@@ -150,7 +165,9 @@ document.addEventListener('keyup', (e) => {
 
     if (!found || found.length > 1) {
         return
-    } else {
+    } else if (found == "F5") {
+        return
+    }   else {
         insertLetter(pressedKey)
     }
 })
