@@ -114,7 +114,7 @@ function checkGuess() {
         }, delay)
         }
         if (guessString === rightGuessString) {
-            alert("you guessed right! game over!")
+            alert("Parabéns, você acertou!")
             guessesRemaining = 0;
             return 
         } else {
@@ -123,8 +123,8 @@ function checkGuess() {
             nextLetter = 0;
 
             if (guessesRemaining === 0) {
-                alert("you've run out of guesses! game over!")
-                alert(`the right word was: "${rightGuessString}"`)
+                alert("Tente outra vez!")
+                alert(`A palavra correta era "${rightGuessString}"`)
             }
         }
     }
@@ -165,7 +165,8 @@ document.addEventListener('keyup', (e) => {
 
     if (!found || found.length > 1) {
         return
-    } else if (found == "F5") {
+    } else if (found = "F5") {
+        // insertLetter("")
         return
     }   else {
         insertLetter(pressedKey)
