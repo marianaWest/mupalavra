@@ -43,6 +43,7 @@ function initBoard() {
         board.appendChild(row)
     }
 }
+initBoard();
 
 function shadeKeyBoard(letter,color) {
     for (const elem of document.getElementsByClassName('keyboard-button')) {
@@ -77,9 +78,8 @@ function checkGuess() {
         guessString += val 
     }
 
-    // if (guessString.length != 5) {
     if (guessString.length != rightGuess.length) {
-    //     alert("not enough letters!")
+        // alert("not enough letters!")
         return
     }
 
@@ -128,8 +128,9 @@ function checkGuess() {
             }
         }
     }
+    
 
-    function insertLetter(pressedKey) {
+function insertLetter(pressedKey) {
         // if (nextLetter === 5) {
         if (nextLetter === rightGuess.length) {
             return;
@@ -161,14 +162,15 @@ document.addEventListener('keyup', (e) => {
         return;
     }
 
+    if (pressedKey === "F5") {
+        return;
+    }
+
     let found = pressedKey.match(/[a-z]/gi)
 
     if (!found || found.length > 1) {
         return
-    } else if (found = "F5") {
-        // insertLetter("")
-        return
-    }   else {
+    } else {
         insertLetter(pressedKey)
     }
 })
@@ -186,7 +188,7 @@ document.getElementById('keyboard-cont').addEventListener('click', (e) => {
     document.dispatchEvent(new KeyboardEvent('keyup', {'key': key}))
 })
 
-initBoard()
+
 
 
 
