@@ -1,19 +1,7 @@
-// import { WORDS } from "../words.js"
+// import { WORDS } from "words.js"
 
 const WORDS = [
-    'kozak',
-    'lange',
-    'moure',
-    'maack',
-    'peret',
-    'borba',
-    'wanda',
-    'hanke',
-    'bororo',
-    'xeta', 
-    'parana', 
-    'mate', 
-  ]
+    'kozak', 'lange', 'moure', 'maack', 'peret', 'borba', 'wanda', 'hanke', 'bororo', 'xeta', 'parana', 'mate', ]
 
 const NUMBER_OF_GUESSES = 6
 let guessesRemaining = NUMBER_OF_GUESSES
@@ -51,7 +39,7 @@ function shadeKeyBoard(letter,color) {
             let oldColor = elem.style.backgroundColor;
             if (oldColor === 'green') {
                 return;
-            } if (oldColor === 'yellow' && color !== 'green') {
+            } if (oldColor === 'rgba(255, 255, 102, 1)' && color !== 'green') {
                 return;
             } 
             elem.style.backgroundColor =  color
@@ -79,7 +67,6 @@ function checkGuess() {
     }
 
     if (guessString.length != rightGuess.length) {
-        // alert("not enough letters!")
         return
     }
 
@@ -88,7 +75,6 @@ function checkGuess() {
         // return
     }
 
-    // for (let i = 0; i < 5; i++) {
     for (let i = 0; i < rightGuess.length; i++) {
         let letterColor = ""
         let box = row.children[i]
@@ -97,12 +83,12 @@ function checkGuess() {
         let letterPosition = rightGuess.indexOf(currentGuess[i])
 
         if (letterPosition === -1) {
-            letterColor = 'grey'
+            letterColor = 'rgba(117, 158, 140, .5)'
         } else {
             if (currentGuess[i] === rightGuess[i]) {
-                letterColor = "green"
+                letterColor = 'green'
             } else {
-                letterColor = 'yellow'
+                letterColor = 'rgba(255, 255, 102, 1)'
             }
             // rightGuess[letterPosition] = "#"
         }
