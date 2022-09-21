@@ -98,7 +98,7 @@ function checkGuess() {
         }, delay)
         }
         if (guessString === rightGuessString) {
-            alert("Parabéns, você acertou!")
+            toastr.success("Parabéns, você acertou!")
             guessesRemaining = 0;
             return 
         } else {
@@ -107,8 +107,8 @@ function checkGuess() {
             nextLetter = 0;
 
             if (guessesRemaining === 0) {
-                alert("Tente outra vez!")
-                alert(`A palavra correta era "${rightGuessString}"`)
+                toastr.error("Tente outra vez!")
+                toastr.info(`A palavra correta era "${rightGuessString}"`)
             }
         }
     }
