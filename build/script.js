@@ -1,7 +1,5 @@
-// import { WORDS } from "words.js"
+import { WORDS } from "./words.js"
 
-const WORDS = [
-    'kozak', 'lange', 'moure', 'maack', 'peret', 'borba', 'wanda', 'hanke', 'bororo', 'xeta', 'parana', 'mate', ]
 
 const NUMBER_OF_GUESSES = 6
 let guessesRemaining = NUMBER_OF_GUESSES
