@@ -15,55 +15,29 @@ I'm working a database so that the museum researchers will be able to enter more
   - JavaScript 
   - Toastr
   - AnimateCSS
+  - NPM
 
 # Installation
 
-[Explain how to install your project locally. Technical person would want to clone your repo, check code and run it locally]
-
-**Example:**
-
-To install {YOUR_PROJECT_NAME} locally, please follow the steps below:
+To install Mupalavra locally, please follow the steps below:
   - Clone repo to your machine
   - Open the root of the project and install all dependencies with `npm i` / `yarn`
-  - Project has various scripts to run:
-    - `npm start` - running local version
-    - `npm run test` - run tests
+  - Install live-server by typing
+    - `npm install live-server` 
+   - To start live-server, type
+    - `live-server build` 
 
 # What I have learned
 
-[Tell more about what you have learned while building this project]
-
-**Example:**
-
-While I was building {YOUR_PROJECT_NAME} I have learned the fundamentals of React and Redux. I learned what is the difference between React Context API and Redux, and what works best for my current application. I have used Reat hooks like useEffect, useState. It was my first project using TypeScript and I have learned a lot about TypeScript type definitions and fundamentals.
+With this project I learned more ways to interact with the DOM using JavaScript. 
 
 # What issues have I faced and how I resolved them
 
-[Tell what was hard in the process of building the project. Tell about where have you feel stuck and how did you overcome this.]
-
-**Example:**
-
-When I tried to connect to the third-party API, I was not sure how to use fetch and what is the difference between async/await, what are Promises and how to use them. After some Googling I found out the MDN documentation about async/await and tried to use it in practice - it worked! 
+When deploying the project on GitHub, I couldn't make it work. The problem was that the original tutorial uses the folder "build" and I found out that I had to change it to "docs" to make it work.  
 
 # Source
-
-[Is this project was part of the course? Is it your own idea? Is it came from community?]
-
-**Example:**
-
-This project is done as part of the SheCodes course curriculum. 
-
-
-
-
-
-
-
-## Install
-
-```sh
-npm install
-```
+ The tutorial on FreeCodeCamp can be found here:  
+ (https://www.freecodecamp.org/news/build-a-wordle-clone-in-javascript/)
 
 
 
