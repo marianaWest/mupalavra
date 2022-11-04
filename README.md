@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to Mupalavra 👋</h1>
 
-[[PLACE_FOR_YOUR_IMAGE]](https://user-images.githubusercontent.com/97693233/200030849-fba15ed1-7265-4ad1-a367-ae896cc53a49.mp4)
+[[PLACE_FOR_YOUR_IMAGE]]
 
 https://marianawest.github.io/mupalavra/   
 
